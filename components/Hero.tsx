@@ -4,19 +4,19 @@ const Hero = () => {
   return (
     <section className="relative h-screen w-full flex flex-col md:flex-row overflow-hidden">
       {/* Left Panel: Union Buildings (Grayscale) */}
-      <div className="w-full md:w-1/2 h-1/2 md:h-full bg-stone-900 relative">
-        <div className="absolute inset-0 bg-black/60 flex items-center justify-center">
-             {/* Placeholder for Union Buildings Image */}
-             <span className="text-stone-600 font-bold text-4xl opacity-20 uppercase tracking-widest text-center">Union Buildings<br/>(Disrepair)</span>
-        </div>
+      <div
+        className="w-full md:w-1/2 h-1/2 md:h-full bg-stone-900 relative bg-cover bg-center"
+        style={{ backgroundImage: "url('/hero-left.jpeg')" }}
+      >
+        <div className="absolute inset-0 bg-black/60" />
       </div>
 
       {/* Right Panel: Futuristic Skyline (Golden Hour) */}
-      <div className="w-full md:w-1/2 h-1/2 md:h-full bg-amber-600 relative">
-        <div className="absolute inset-0 bg-gradient-to-tr from-amber-900/40 to-amber-500/20 flex items-center justify-center">
-            {/* Placeholder for Futuristic Skyline */}
-            <span className="text-amber-100 font-bold text-4xl opacity-40 uppercase tracking-widest text-center">Future City<br/>(Golden Hour)</span>
-        </div>
+      <div
+        className="w-full md:w-1/2 h-1/2 md:h-full bg-amber-600 relative bg-cover bg-center"
+        style={{ backgroundImage: "url('/hero-right.jpeg')" }}
+      >
+        <div className="absolute inset-0 bg-gradient-to-tr from-amber-900/40 to-amber-500/20" />
       </div>
 
       {/* Content Overlay */}
@@ -43,4 +43,3 @@ const Hero = () => {
 };
 
 export default Hero;
-
